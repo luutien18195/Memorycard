@@ -1,0 +1,124 @@
+/*---------------------Button-------------------------------*/
+ .btn{
+ 	width:100px;
+ 	height: 40px;
+	border-radius: 3px;		
+	transition: all ease 0.2s;
+	-webkit-transition: all ease 0.2s;
+	margin:0 10px;
+ }
+
+button#ez-m{
+	background-color: #1abc9c;
+	color:#fff;
+	border: 1px solid #1abc9c;
+}
+button#ez-m:hover{
+	background-color: #fff;
+ 	color:#1abc9c; 	
+}
+button#nm-m{
+	background-color: #f39c12;
+	color:#fff;
+	border: 1px solid #f39c12;
+}
+button#nm-m:hover{
+	background-color: #fff;
+ 	color:#f39c12;
+ }
+button#cr-m{
+	background-color: #c0392b;
+	color:#fff;
+	border: 1px solid #c0392b;
+}
+button#cr-m:hover{
+	background-color: #fff;
+ 	color:#c0392b;
+ 	
+}
+button#replay{
+	background-color: #34495e;
+	color:#fff;
+	border: 1px solid #34495e;
+}
+button#replay:hover{
+	background-color: #fff;
+ 	color:#34495e; 	
+}
+
+
+
+
+
+#win_modals{
+	display:none;
+}
+#lose_modals{
+	display:none;
+}
+
+
+.md{
+
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 1;
+}
+ .content{
+	width:500px;
+	height: 260px;
+	background-color: #fff;
+	box-shadow: -1px 3px 17px 12px #7e808f;
+	border-radius: 4px;	
+	animation-name:action;
+	animation-duration:1s;
+	z-index: 2;
+	position: absolute;
+	top:25%;
+	left:50%;
+	margin-left: -250px;
+}
+@keyframes action{
+	0%{ top:0% }
+	50%{top: 30%}
+	100%{top: 25%}
+}
+
+.content .headder{
+	width:100%;
+	height: 10%;
+	text-align: center;
+	line-height: 60px;
+}
+.content .body{
+	width:100%;
+	height: 60%;
+	text-align: center;
+	line-height: 157px;
+}
+.content .body h3{
+	color:#2c3e50;
+	font-size:27px;
+	font-family: "Open Sans Condensed";
+}
+ .content .body h1{
+	color:#2c3e50;
+	font-size:27px;
+	font-family: "Open Sans Condensed";
+	font-weight: bold;
+}
+.content .footter{
+	width:100%;
+	
+	text-align: center;
+	
+}
+
+
+	
+

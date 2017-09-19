@@ -1,0 +1,107 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	/*
+		background-image: url("../images/background_lol4.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+	*/
+	
+}
+#clock{
+	position: fixed;
+	width: 100px;
+	height: 100px;
+	color: #fff;
+	left: 90%;
+	font-size: 40px;
+	z-index: 2;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 100px;
+	display: none;
+	text-shadow: 1px 4px 20px #fff;
+	box-shadow: 0px 0px 11px 5px #fff;
+
+}
+#video_background {
+position: absolute;
+bottom: 0px;
+right: 0px;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -1000;
+overflow: hidden;
+position: fixed;
+}
+#container{
+	width:1000px;
+	height:1012px;
+	border: none;
+	margin:0 auto;
+	display:none;
+}
+
+.card{
+	width:150px;
+	height: 208px;
+	position: relative;
+	display:inline-block;
+	margin:20px;
+	
+}
+
+ .card img{
+	width:150px;
+	height: 208px;
+	border-radius: 5px;
+	cursor:pointer;
+}
+
+ .card .back{
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+ .card .front{
+	 -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	position: absolute;
+}
+ .card .front img{
+	box-shadow: 1px 0px 20px 8px #b3ffed;
+	margin-top:-15px;
+}
+ .card .front, 
+.card .back{
+	transition: all ease 0.5s;
+	backface-visibility: hidden;
+}
+ .card img{
+	transition: all ease 0.3s;
+}
+ .card:hover img{
+	box-shadow: 1px 0px 20px 8px #b3ffed;
+	margin-top:-15px;
+
+}
+
+.card.flipped .back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg)
+}
+.card.flipped .front{
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    transform: rotateY(0deg)
+}
